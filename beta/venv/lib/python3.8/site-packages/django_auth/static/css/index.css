@@ -1,0 +1,1176 @@
+@media screen and (min-width: 1199px) {
+	body{
+	    background-color:#000000;
+	    font-size: 0;
+	    height: 100%;
+	    overflow-x: hidden;
+	}
+	#mainContent {
+		overflow-x: hidden;
+	}
+	#containerBox {
+		position: relative;
+	}
+
+	#bannerBg {
+		position: relative;
+		top: -60px;
+		height: 974px;
+		color: #CDD5E2;
+		padding-top: 560px;
+	}
+	#bannerBg>img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: auto;
+		height: 974px;
+		margin:0 calc(50% - 960px);
+		overflow: hidden;
+		z-index: -1;
+	}
+	#bannerBg>div {
+		text-align: center;
+	}
+	#scheduleBg {
+		position: relative;
+		top: -60px;
+		width: 100%;
+	}
+	#arrow {
+		position: absolute;
+		top: 100px;
+		left: 50%;
+		width: 227px;
+    	height: 26px;
+    	margin-left: -113px;
+		z-index: 20;
+	}
+	#arrow2 {
+		position: absolute;
+		top: 40px;
+		left: 0;
+		width: auto;
+		height: 816px;
+		margin:0 calc(50% - 960px);
+		overflow: hidden;
+		z-index: 20;
+	}
+	#gameIntrol {
+		width: 1000px;
+		height: auto;
+		color: #4FE2FE;
+		padding-top: 184px;
+		margin-bottom: 265px;
+		margin: 0 auto;
+	}
+	#schedule {
+		position: relative;
+		left: 50%;
+		width: 911px;
+		height: 111px;
+		margin-left: -450px;
+		color: #FFFFFF;
+		padding-top: 230px;
+		padding-bottom: 200px;
+		/*padding-top: 410px;*/
+	}
+	#stageBox {
+		position: relative;
+		margin-top: -40px;
+	}
+	#joinGame,
+	#submitWork,
+	#netPromoted,
+	#finalVote,
+	#peerReviewed,
+	#awardCeremony {
+		position: absolute;
+		font-size:0;
+		line-height:1;
+	}
+
+	#joinGame {
+		left: 0;
+		top: -60px;
+	}
+	#submitWork {
+		left: 210px;
+    	top: 12px;
+	}
+	#netPromoted {
+		left: 375px;
+    	top: -100px;
+	}
+	#finalVote {
+		right: 265px;
+    	top: 30px;
+	}
+	#peerReviewed {
+		right: 120px;
+    	top: -100px;
+	}
+	#awardCeremony {
+		right: 32px;
+    	bottom: -90px;
+	}
+	#overView {
+		position: relative;
+		top:-60px;
+	}
+	#overviewImage {
+		position: absolute;
+		width: 997px;
+		top: 190px;
+		left: 50%;
+		margin-left: -498px;
+		height: 719px;
+		overflow: hidden;
+		z-index: 20;
+		pointer-events: none;
+	}
+	#overviewBg {
+		position: absolute;
+		top: -400px;
+		left: 0;
+		right: 0;
+		height: 1890px;
+		margin:0 auto;
+		overflow: hidden;
+		z-index: -1;
+		pointer-events: none;
+	}
+	#overViewIntrol {
+		position: relative;
+		width: 980px;
+		color: #fff;
+		margin: 0 auto;
+		padding-top: 460px;
+	}
+	#overViewIntrol .expert-group,
+	#overViewIntrol .shool-group{
+		color: #4FE2FE;
+		padding: 0 8px;
+	}
+	#overViewIntrol .shool-group {
+		padding-right: 0;
+	}
+	.game-type {
+		position: relative;
+		padding: 0 4px;
+	}
+	.game-type:before {
+		position: absolute;
+		content: "";
+		top: 2px;
+		left: -2px;
+		width: 6px;
+		height: 10px;
+		border-top: 1px solid #fff;
+		border-left: 1px solid #fff;
+	}
+	.game-type:after {
+		position: absolute;
+		content: "";
+		bottom: 0;
+		right: -2px;
+		width: 6px;
+		height: 10px;
+		border-bottom: 1px solid #fff;
+		border-right: 1px solid #fff;
+	}
+	#operationBtnBox .link-style,
+	#operationBtnBox .link-style:hover,
+	#operationBtnBox .link-style:focus,
+	#operationBtnBox .link-style:active,
+	#operationBtnBox .link-style:visited {
+		font-size: 16px !important;
+	}
+
+	#operationBtn {
+		position: relative;
+		width: 100%;
+		height: 77px;
+		bottom: 35px;
+		left: 0;
+	}
+	#operationBtnBox {
+		position: relative;
+		width: 596px;
+		height: 77px;
+		margin: 0 auto;
+	}
+	#registerNow,
+	#gameDetail  {
+		position: absolute;
+		width: 230px;
+		height: 74px;
+		background-image: url("../images/index_btn_hover20.png");
+		background-position: center;
+		background-repeat: no-repeat;
+		padding: 26px 0;
+		text-align: center;
+	}
+
+	#registerNow:hover,
+	#gameDetail:hover {
+		position: absolute;
+		width: 230px;
+		height: 74px;
+		background-image: url("../images/index_btn_hover21.png");
+		background-position: center;
+		background-repeat: no-repeat;
+		padding: 26px 0;
+		color: #fff;
+	}
+	#registerNow {
+		top: 100px;
+		left: 0;
+	}
+	#gameDetail {
+		top: 100px;
+		right: 0;
+	}
+
+	#gamePrice {
+		position: relative;
+		width: 100%;
+		height:auto;
+		padding-top: 283px;
+		z-index: 9999;
+    	/*margin-top: 240px;*/
+	}
+	#priceHeader {
+		position: relative;
+		width: 138px;
+		height: 31px;
+		margin: 0 auto;
+	}
+	#gamePriceArrow {
+		position: absolute;
+		top: 40px;
+		left: 0;
+		width: auto;
+		height: 816px;
+		margin:0 calc(50% - 960px);
+		overflow: hidden;
+		z-index: 20;
+		pointer-events: none;
+	}
+	#gamePriceArrow2 {
+		position: absolute;
+		top: 182px;
+		left: 50%;
+		width: 1000px;
+		height: 86px;
+		margin-left: -500px;
+		z-index: 20;
+	} 
+	#priceDetail {
+		color: #333333;
+		margin-bottom: 64px;
+	}
+	#priceType {
+		width: 260px;
+		margin: 0 auto;
+		height: 45px;
+	}
+	#priceType.price-type-en {
+		width: 450px !important;
+	}
+	#priceType li {
+		position: relative;
+		padding-top: 8px; 
+		padding-bottom: 0;
+		padding-left: 0;
+		padding-right: 0;
+	}
+	#priceType .expert-type {
+		padding-right: 60px;
+	}
+	#priceType .expert-type:after{
+		position: absolute;
+		content: "";
+		right: -4px;
+		top: 14px;
+    	height: 24px;
+		border-right: 1px solid #4f4f4f;
+	}
+	#priceType .school-type {
+		padding-left: 60px;
+	}
+	#priceType li a {
+		text-shadow: none;
+		padding: 8px 0px;
+		color: #4c5152;
+	}
+	#priceType li a:hover,
+	#priceType li a:focus,
+	#priceType li a:active,
+	#priceType li a:visited {
+		background-color: inherit;
+		color: #25c1d6 !important;
+	}
+	#priceType li a.active {
+		color: #4fe2fe;
+	}
+	#priceType li a.active {
+		border-bottom:1px solid #4fe2fe !important;
+	}
+	#pricePrize {
+		position: relative;
+		clear: both;
+		width: 842px;
+		left: 50%;
+		margin-left: -410px;
+		margin-top: 160px;
+		line-height: 1;
+	}
+	.item-hide  {
+		display: none !important;
+	}
+	.prize-item {
+		position: relative;
+		display: inline-block;
+		width: 232px;
+		height: 244px;
+		background-color: #0a181f;
+		padding-top: 120px;
+		vertical-align: top;
+	}
+	#lightHalo {
+		position: absolute;
+		top: -220px;
+    	left: -158px;
+		width: 554px;
+		height: 551px;
+		z-index: -1;
+		pointer-events: none;
+	}
+	.prize-img {
+		position: absolute;
+		top: -100px;
+		left: 24px;
+	}
+	.other-award {
+		top: 20px;
+		left: 76px;
+	}
+
+	.prize-name {
+		color: #25C1D6;
+		margin-top: 4px;
+	}
+
+	.prize-number {
+		color: #4FE2FE;
+		font-size: 0;
+		margin-top: 10px;
+	}
+	.prize-number>img,
+	.prize-number>span {
+		vertical-align: middle;
+	}
+	#gameJudges {
+		position: relative;
+		width: 100%;
+		height: 100%;
+		background-image: url("../images/top_arrow.png");
+		background-position: center;
+		background-repeat: no-repeat;
+		margin-top: -697px;
+    	padding-top: 970px;
+	}
+	#gameJudgesBg {
+		position: absolute;
+		top: -230px;
+		left: 0;
+		right: 0;
+		height: 1890px;
+		margin:0 auto;
+		overflow: hidden;
+		z-index: -1;
+	}
+	#judgesHeader {
+		position: relative;
+		width: 227px;
+		height: 88px;
+		margin: 0 auto;
+		background-image: url("../images/judge_header.png");
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+
+	#judgesType {
+		width: 260px;
+		height: 100%;
+		margin: 0 auto;
+		margin-top: 120px;
+	}
+	#judgesType li {
+		position: relative;
+	}
+	#judgesType .expert-type {
+		padding-right: 60px;
+	}
+	#judgesType .expert-type:after{
+		position: absolute;
+		content: "";
+		right: -4px;
+		top: 0px;
+    	height: 24px;
+		border-right: 1px solid #4f4f4f;
+	}
+	#judgesType .school-type {
+		padding-left: 60px;
+	}
+
+	#judgesType li a {
+		text-shadow: none;
+		padding-top: 0;
+		padding-bottom: 8px;
+		padding-left: 0;
+		padding-right: 0;
+		color: #4c5152;
+	}
+	#judgesType li a:hover,
+	#judgesType li a:focus,
+	#judgesType li a:active,
+	#judgesType li a:visited {
+		background-color: inherit;
+		color: #25c1d6 !important;
+	}
+	#judgesType li a.active {
+		color: #4fe2fe;
+	}
+	#judgesType li a.active {
+		border-bottom:1px solid #4fe2fe !important;
+	}
+
+	#judgesType li a:visited {
+		color: #4c5152 !important;
+	}
+	#judgesExpert {
+		clear: both;
+		width: 1080px;
+		margin: 0 auto;
+	}
+	#judgesExpert .judge-expert-box {
+		display: inline-block;
+		position: relative;
+	}
+
+	#judgesExpert .judge-name,
+	#judgesExpert .judge-company,
+	#judgesExpert .judge-position {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 170px;
+		text-align: center;
+		color: #ffffff;
+		line-height: 1;
+	}
+
+	#judgesExpert .judge-company {
+		bottom: -30px;
+	}
+
+	#judgesExpert .judge-position {
+		bottom: -56px;
+	}
+
+	#gamePartner {
+		position: relative;
+		width: 100%;
+		/*height: 816px;*/
+		background-image: url("../images/top_arrow.png");
+		background-position: center;
+		background-repeat: no-repeat;
+		margin-top: 160px;
+		padding-bottom: 50px;
+	}
+	#partnerHeader {
+		position: relative;
+		width: 227px;
+		height: 92px;
+		margin: 0 auto;
+		background-image: url("../images/partner_header.png");
+		background-position: center;
+		background-repeat: no-repeat;
+		margin-bottom: 80px;
+	}
+	#partnerBody  {
+		width: 1200px;
+		margin: 0 auto;
+		line-height: 1;
+	}
+	#partnerBody .partner-box{
+		display: inline-block;
+	}
+	.schedule-judges-en #finalVote{
+		right: 162px !important;
+	}
+	.schedule-judges-en #awardCeremony{
+		right: -85px !important;
+	}
+	.media_play{
+	 width: 147px;
+    height: 147px;
+    background: red;
+    position: absolute;
+    left: 50%;
+    margin-top: 180px;
+    margin-left: -73px;
+    z-index:99999;
+    cursor: pointer;
+	background:url('../images/media_play.png');
+    }
+    .media_play:hover{
+   	background:url('../images/media_play_hover.png');
+    }
+
+    #blessing {
+    	position: relative;
+    	padding-top:350px;
+    }
+    #index_video {
+    	position:relative;
+    	display:block;
+    	width: 800px;
+    	height: 500px;
+    	margin:0 auto;
+    	z-index: 9999;
+    }
+    #blessSchedule {
+    	display:block;
+    	margin:0 auto;
+    	margin-bottom:50px;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+	body {
+		line-height: 1;
+	}
+	#bless_arrow{
+		width:113px;
+		height:13px;
+		display:block;
+		margin:0 auto;
+		margin-bottom:15px;
+	}
+	.mobile_index_pop{
+		position: fixed;
+		top: 0px;
+		left: 0px;
+		right: 0px;
+		bottom: 0px;
+		background:rgba(0,0,0,0.6);
+		z-index: 999;
+	}
+	#mobile_blessing {
+    	position: relative;
+    	/*padding-top:350px;*/
+    	margin-top: 130px;
+    }
+    #mobile_blessSchedule {
+    	display:block;
+    	margin:0 auto;
+    	width: 120px;
+    	height: 18px;
+    	margin-bottom:40px;
+    }
+    #mobile_index_video {
+    	display:block;
+    	margin:0 auto;
+    	width: 80%;
+    	min-height: 250px;
+    	max-height: 280px;
+    	z-index: 999999;
+    }
+    #blessSchedule {
+    	display:block;
+    	margin:0 auto;
+    }
+	#bannerBg {
+		position: relative;
+		height: 490px;
+	}
+	#mobileIndexTitle,
+	#mobileIndexTitleEn{	
+	    position: absolute;
+	    left: 0;
+	    top: -70px;
+	    width: 100%;
+	    height: 400px;
+	    background-image: url(../images/mobile_index_title.png);
+	    background-position: center;
+	    background-repeat: no-repeat;
+	    background-size: 640px 400px;
+	    z-index: 20;
+	}
+	#mobileIndexTitleEn {
+		background-image: url(../images/mobile_index_title_en.png);
+	}
+	#indexTitleBg {
+		position: absolute;
+	    left: 0;
+	    top: -50px;
+	    width: 100%;
+	    height: 400px;
+	    background-image: url(../images/index_title_bg.jpg);
+	    background-position: center;
+	    background-repeat: no-repeat;
+	    background-size: 640px 400px;
+	    z-index: -1;
+	}
+
+	#registerBox {
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		margin-left: -105px;
+		width: 210px;
+		height: 68px;
+	}
+	#registerNow {
+		position: absolute;
+		width: 210px;
+		height: 68px;
+		background-image: url("../images/index_big_btn.png");
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: 210px 68px;
+		line-height: 68px;
+		text-align: center;
+	}
+	#headerTitle {
+		margin-top: 125px;
+		text-align: center;
+		color: #4fe2fe;
+	}
+	#headerTitle>img{
+		width: 132px;
+		height: 15px;
+	}
+	#scheduleBg {
+		margin-top: 67px;
+		text-align: center;
+	}
+	#indexScheduleBox {
+		width: 133px;
+		margin: 0 auto;
+		padding-bottom: 11px;
+		border-bottom: 4px solid #28717F;
+	}
+	#stageImageBox {
+		margin-top: 45px;
+		position: relative;
+		color: #fff;
+	}
+	#joinGame,
+	#submitWork,
+	#netPromoted,
+	#finalVote,
+	#peerReviewed,
+	#awardCeremony {
+		position: absolute;
+		display: inline-block;
+		width: 170px;
+	}
+	#joinGame {
+		top: 0;
+		left: 50%;
+		margin-left: -170px;
+		text-align: right;
+		padding-right: 30px;
+	}
+
+	#submitWork {
+		top: 68px;
+		left: 50%;
+		text-align: left;
+		padding-left: 30px;
+	}
+
+	#netPromoted {
+		top: 148px;
+		left: 50%;
+		margin-left: -170px;
+		text-align: right;
+		padding-right: 30px;
+	}
+	#finalVote {
+		top: 228px;
+		left: 50%;
+		text-align: left;
+		padding-left: 30px;
+	}
+	#peerReviewed {
+		top: 315px;
+		left: 50%;
+		margin-left: -170px;
+		text-align: right;
+		padding-right: 30px;
+	}
+	#awardCeremony {
+		top: 315px;
+		left: 50%;
+		text-align: left;
+		padding-left: 30px;
+	}
+	#overView {
+		/*margin-top: 120px;*/
+		text-align: center;
+		margin-bottom: 132px;
+	}
+	#overViewIntrol {
+		margin-top: 54px;
+		color: #fff;
+	}
+	#overViewIntrol .expert-group,
+	#overViewIntrol .shool-group {
+		color: #4fe2fe;
+		margin: 0 10px;
+	}
+	#overViewIntrol .shool-group {
+		margin-right: 0;
+	}
+	.game-type {
+		position: relative;
+		padding: 0 4px;
+	}
+	.game-type:before {
+		position: absolute;
+		content: "";
+		top: 2px;
+		left: -2px;
+		width: 6px;
+		height: 10px;
+		border-top: 1px solid #fff;
+		border-left: 1px solid #fff;
+	}
+	.game-type:after {
+		position: absolute;
+		content: "";
+		bottom: 0;
+		right: -2px;
+		width: 6px;
+		height: 10px;
+		border-bottom: 1px solid #fff;
+		border-right: 1px solid #fff;
+	}
+	#operationBtn {
+		position: relative;
+		text-align: center;
+		height: 49px;
+	}
+	#registerNow2,
+	#gameDetail {
+		position: absolute;
+		left: 50%;
+		width: 150px;
+		height: 49px;
+		background-image: url("../images/index_small_btn.png");
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: 150px 49px;
+		line-height: 49px;
+		text-align: center;
+	}
+	#gamePrice {
+		margin-top: 135px;
+		text-align: center;
+	}
+	#priceDetail {
+		color: #4F4F4F;
+	}
+	#priceType {
+		position: relative;
+		height: 98px;
+		margin-top: 63px;
+	}
+	#judgesType {
+		position: relative;
+		height: 34px;
+		margin-top: 63px;
+	}
+	#priceType ul,
+	#judgesType ul {
+		margin: 0 auto;
+		width: 210px;
+		float: none;
+	}
+	#judgesType ul  {
+		margin-top: 35px;
+	}
+	#priceType ul>li,
+	#judgesType ul>li {
+		display: inline-block;
+		width: 105px;
+	}
+	#priceType.price-type-en ul {
+		width: 250px !important;
+	}
+	#priceType.price-type-en ul>li{
+		width: 120px !important;
+	}
+	#priceType ul>li>a,
+	#judgesType ul>li>a {
+		color: #4fe2fe;
+	}
+	#priceType .price-types,
+	#judgesType .judge-types {
+		text-shadow: none !important;
+		line-height: 1 !important;
+		padding: 8px 0;
+		background-color: #050c10;
+		border-top: 2px solid #050c10;
+	}
+	#priceType .price-types.active,
+	#judgesType .judge-types.active {
+		background-color: #0a181f;
+		border-top: 2px solid #4fe2fe;
+	}
+	#pricePrize {
+		padding: 0 15px;
+		margin-top: 10px;
+	}
+	#pricePrize .prize-item {
+		display: inline-block;
+		position: relative;
+		width: 110px;
+		height: 110px;
+		background-color: #07181f;
+		padding-top: 58px;
+		vertical-align: top;
+	}
+	#pricePrize .prize-item>img{
+		position: absolute;
+		top: -25px;
+		left: 21px;
+		width: 68px;
+		height: 86px;
+	}
+	.first_prize750,
+	.second_prize750,
+	.third_prize750 {
+		top: -37px;
+		left: 20px;
+		width: 68px;
+		height: 86px;
+	}
+	.first_prize320,
+	.second_prize320,
+	.third_prize320 {
+		display: none;
+	}
+	#mobileBestAward,
+	#mobileExcellenceAward,
+	#mobileFinalistAward  {
+		position: absolute;
+	}
+	#mobileBestAward {
+		top: 10px !important;
+		left: 40px !important;
+		width: 30px !important;
+		height: 37px !important;
+	}
+	#mobileExcellenceAward {
+		top: 10px !important;
+		left: 37px !important;
+		width: 35px !important;
+		height: 35px !important;
+	}
+	#mobileFinalistAward {
+		top: 10px !important;
+		left: 37px !important;
+		width: 35px !important;
+		height: 37px !important;
+	}
+	#mobileBestAward2,
+	#mobileExcellenceAward2,
+	#mobileFinalistAward2 {
+		display: none;
+	}
+ 	.prize-item .prize-name{
+		color: #25C1D6;
+	}
+	.prize-item .prize-number>img{
+		vertical-align: bottom;
+	}
+	.item-hide  {
+		display: none !important;
+	}
+	#gameJudges {
+		text-align: center;
+	}
+
+	#gameJudges .judge-expert-box{
+		display: inline-block;
+		position: relative;
+		width: 130px;
+		height: auto;
+		color: #4FE2FE;
+		margin-bottom: 65px;
+	}
+	#gameJudges .judge-expert>div>img,
+	#gameJudges .judge-shool>div>img {
+		width: 115px;
+		height: 115px;
+	}
+	#judgesExpert {
+		margin-top: 40px;
+	}
+
+	#judgesExpert .judge-name,
+	#judgesExpert .judge-company,
+	#judgesExpert .judge-position {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 130px;
+		text-align: center;
+		color: #fff;
+	}
+
+	#judgesExpert .judge-company {
+		bottom: -20px;
+	}
+
+	#judgesExpert .judge-position {
+		bottom: -40px;
+	}
+	#gamePartner {
+		margin-top: 120px;
+	}
+	#partnerHeader {
+		text-align: center;
+		margin-bottom: 38px;
+	}
+	#partnerBody>div  {
+		text-align: center;
+	}
+	#partnerBody .partner-box,
+	.partner-logo {
+		display: inline-block !important;
+	}
+	.partner_logo_sm {
+		display: none !important;
+	}
+	.schedule-bg-en #stageImageBox .font-size18{
+		font-size: 12px !important;
+	}
+	.schedule-bg-en #stageImageBox .font-size20{
+		font-size: 14px !important;
+	}
+	.schedule-bg-en #submitWork {
+		top: 78px;
+	}
+	.schedule-bg-en #netPromoted {
+		top: 158px;
+	}
+	.schedule-bg-en #finalVote {
+		top: 243px;
+	}
+	.most-popular-en {
+		position: relative;
+		left: -2px;
+		width: 115px;
+	}
+	.header-title-en .mb14{
+		margin-bottom: 10px;
+		line-height: 20px;
+	}
+	.mobile_media_play{
+	width: 73px;
+    height: 73px;
+    position: absolute;
+    left: 50%;
+    top:50%;
+    margin-top: -37px;
+    margin-left: -36px;
+    z-index:99999;
+    cursor: pointer;
+	background:url('../images/media_play.png');
+	background-size: cover;
+    }
+    .mobile_media_play:hover{
+   	background:url('../images/media_play_hover.png');
+   	background-size: cover;
+    }
+}
+
+@media screen and (max-width: 374px) {
+	/**/
+	.prize-item {
+		position: relative;
+		display: block !important;
+		margin: 0 auto !important;
+		margin-bottom: 25px !important;
+		width: 210px !important;
+		height: 100px !important;
+		padding: 30px 0 !important;
+	}
+	.prize-item.mobile-mb-xs {
+		margin-bottom: 130px !important;
+	}
+	/*.prize-item>img {
+		position: absolute !important;
+		top: 12px !important;
+		left: 15px !important;
+	}*/
+	.prize-item .prize-name {
+		font-size: 12px !important;
+	}
+	.prize-item .prize-name,
+	.prize-item .prize-number {
+		text-align: left !important;
+		padding-left: 95px !important;
+	}
+
+	#mobileBestAward,
+	#mobileExcellenceAward,
+	#mobileFinalistAward {
+		display: none;
+	}
+
+	#mobileBestAward2,
+	#mobileExcellenceAward2,
+	#mobileFinalistAward2 {
+		position: absolute !important;
+		display: inline-block !important;
+	}
+
+	#mobileBestAward2 {
+		top: 26px !important;
+		left: 31px !important;
+		width: 38px !important;
+		height: 48px !important;
+	}
+	#mobileExcellenceAward2 {
+		top: 26px !important;
+		left: 26px !important;
+		width: 48px !important;
+		height: 48px !important;
+	}
+	#mobileFinalistAward2 {
+		top: 26px !important;
+		left: 31px !important;
+		width: 45px !important;
+		height: 48px !important;
+	}
+
+	#operationBtn {
+		height: 123px !important;
+	}
+	#operationBtn a {
+		display: block;
+		width: 100%;
+		height: 49px;
+		text-align: center;
+	}
+	#operationBtn #registerNow2,
+	#operationBtn #gameDetail {
+		position: relative;
+    	left: 50%;
+    	margin-left: -75px !important;
+	}
+	#operationBtn a:first-child {
+		margin-bottom: 25px;
+	}
+	#gameJudges .judge-expert-box {
+		width: 130px;
+		margin-bottom: 65px;
+	}
+	#judgesExpert .judge-company, 
+	#judgesExpert .judge-name, 
+	#judgesExpert .judge-position {
+		width: 130px;
+		bottom: 0;
+    	left: 0;
+	}
+	#judgesExpert .judge-name {
+		font-weight: 700;
+	}
+	#judgesExpert .judge-company {
+    	bottom: -20px;
+	}
+	#judgesExpert .judge-position {
+    	bottom: -40px;
+	}
+	#judgesExpert .judge-name {
+		font-size: 14px !important;
+	}
+	#judgesExpert .judge-company,
+	#judgesExpert .judge-position {
+		font-size: 11px !important;
+	}
+	#gameJudges .judge-expert>div>img, 
+	#gameJudges .judge-shool>div>img {
+		width: 115px;
+		height: 115px;
+	}
+	.expert-mr20 {
+		margin-right: 0 !important;
+	}
+	#partnerBody {
+		font-size: 0;
+	}
+	.parter-mr {
+		margin-right: 30px !important;
+	}
+	.partner-logo {
+		display: none !important;
+	}
+	.partner_logo_sm {
+		display: inline-block !important;
+	}
+
+	.first_prize750,
+	.second_prize750,
+	.third_prize750 {
+		display: none;
+	}
+	.first_prize320,
+	.second_prize320,
+	.third_prize320 {
+		display: inline-block;
+		top: 14px!important;
+    	left: 12px!important;
+		width: 72px !important;
+		height: 76px !important;
+	}
+	.schedule-bg-en #stageImageBox .font-size18{
+		font-size: 16px !important;
+	}
+	.schedule-bg-en #stageImageBox .font-size20{
+		font-size: 18px !important;
+	}
+	.most-popular-en {
+		position: relative;
+		left: -2px;
+		width: 210px;
+	}
+	.header-title-en .mb14{
+		margin-bottom: 10px;
+		line-height: 20px;
+	}
+	.mobile_media_play{
+	width: 48px;
+    height: 48px;
+    background: red;
+    position: absolute;
+    left: 50%;
+    margin-left: -24px;
+    z-index:99999;
+    cursor: pointer;
+	background:url('../images/media_play.png');
+	background-size: cover;
+    }
+    .mobile_media_play:hover{
+   	background:url('../images/media_play_hover.png');
+   	background-size: cover;
+    }
+}

@@ -1,0 +1,83 @@
+{% extends "../layout/base.html" %}
+
+{% load i18n static %}
+
+{% block title %}
+<meta name="description" content="description" />
+<meta name="keywords" content="keywords" />
+<title>{% trans '登录' %}</title>
+{% endblock %}
+
+{% block css %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/login.css' %}">
+{% endblock %}
+
+{% block content %}
+<div id="userLogin">
+        <div class="login-title text-center">
+            <a href="javascript:;" class="link-style-c1">{% trans 'Logout' %}</a>
+        </div>
+        <div class="login-discription text-center">
+            {% trans 'description' %}
+        </div>
+        <div id="passwordLogin" :style="loginType==1 ? 'display: block;' : 'display: none;'">
+            <form class="" onsubmit="return false;">
+                {% csrf_token %}
+                <div class="form-group mb30 mobile-login-name">
+                    <label for="username" class="mb20 login-name">{% trans '手机号' %}/{% trans '用户名' %}</label>
+                    <input type="text" class="form-control form-lr-input-style" id="username" name="username" v-model="uLogin.username" maxlength="20" @input="_getLimitCharacter('username')" @keyup="setBorderGrey">
+                </div>
+                <div class="form-group  mb30 mobile-login-password">
+                    <label for="password" class="mb20 login-password">{% trans '密码' %}</label>
+                    <input type="password" class="form-control form-lr-input-style" id="password" name="password" v-model="uLogin.password" @keyup="setBorderGrey">
+                </div>
+                <div class="form-group login-type" style="position: relative;height: 20px;margin-bottom: 46px;">
+                    <a href="#" class="link-style codeLogin" @click="changeLoginType(2)">{% trans '手机验证码登录' %}</a>
+                    <a href="/forgetpasswd" class="font-style forget-password">{% trans '忘记密码' %}?</a>
+                </div>
+                <a type="submit"  href="javascript:void(0)" class="btn btn-register-enable mobile-submit mb22" @click="userLogin">{% trans '登录' %}</a>
+                <div class="checkbox" style="margin: 0;">
+                    <label class="demo-label" style="padding-left: 0; margin-right: 10px;">
+                        <input class="demo-checkbox" type="checkbox" name="agree" v-model="keepLogin"><span class="demo-checkbox-input"></span><span style="color:#acb1be;">{% trans '下次自动登录' %}</span>
+                    </label>
+                </div>
+            </form>
+        </div>
+        <div id="massageLogin" :style="loginType==2 ? 'display: block;' : 'display: none;'">
+            <form class="" onsubmit="return false;">
+                {% csrf_token %}
+                <div class="form-group mb30 mobile-login-name">
+                    <label for="mobile" class="mb20 login-name">{% trans '手机号' %}</label>
+                    <input type="number" class="form-control form-lr-input-style" id="mobile" name="mobile" v-model="uLogin.mobile" maxlength="20" onkeyup="value=value.replace(/[^0-9]/g,'')" oninput="if(value.length>20)value=value.slice(0,20)" @keyup="checkPhone('getCode')">
+                </div>
+                <div class="form-group mb30 mobile-login-password" style="position: relative;">
+                    <label for="mobilecode" class="mb20 login-password">{% trans '短信验证码' %}</label>
+                    <div style="position: relative;">
+                        <input type="number" class="form-control form-lr-input-style" id="msgCode" name="mobilecode" v-model="uLogin.mobilecode"  oninput="if(value.length>4)value=value.slice(0,4)" @keyup="setBorderGrey">
+                        <a id="getCode" href="javascript:;" class="link-style" @click="getMobileCode('getCode')">{% trans '获取' %}</a>
+                       <!--  <a id="getCode" href="javascript:;" class="link-style"  @click="getMobileCode('getCode')" v-else>获取</a> -->
+                    </div>
+                </div>
+                <div class="form-group login-type" style="position: relative; height: 20px;margin-bottom: 46px;">
+                    <a href="#" class="link-style codeLogin" @click="changeLoginType(1)">{% trans '密码登录' %}</a>
+                </div>
+                <button type="submit" class="btn btn-register-enable mobile-submit mb22" @click="userLogin">{% trans '登录' %}</button>
+                <div class="checkbox" style="margin: 0;">
+                    <label class="demo-label" style="padding-left: 0; margin-right: 10px;">
+                        <input class="demo-checkbox" type="checkbox" name="agree" v-model="keepLogin"><span class="demo-checkbox-input"></span><span style="color:#acb1be;">{% trans '下次自动登录' %}</span>
+                    </label>
+                </div>
+            </form>
+        </div>
+        <div class="login-tips text-center" style="font-size: 0;">
+            <span class="font-size14" style="margin-right: 10px;">{% trans '没有账号' %}?</span>
+            <a href="/register" class="link-style font-size14">{% trans '注册' %}</a>
+        </div>
+    </div>
+    <div id="cont">
+    </div>
+{% endblock %}
+
+{% block script %}
+<script type="text/javascript" src="{% static 'js/login.js' %}"></script>
+{% endblock %}
